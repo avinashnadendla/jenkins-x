@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        avinashnadendla/avinash-jenkinsx: true
         avinashnadendla/jenkins-x: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        avinashnadendla/avinash-jenkinsx: merge
         avinashnadendla/jenkins-x: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - avinashnadendla/jenkins-x
+        - avinashnadendla/avinash-jenkinsx
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - avinashnadendla/jenkins-x
+        - avinashnadendla/avinash-jenkinsx
       target_url: http://lighthouse.jx.192.168.40.177/merge/status
 kind: ConfigMap
 metadata:
